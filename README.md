@@ -19,5 +19,5 @@ Cabe mencionar que la herramienta sólo podrá desencriptar texto que haya sido 
 <h5>Autor:</h5>
    Esau Ivan Herrera Lopez <br>
 
-[![GitHub](https://user-images.githubusercontent.com/92976034/214440708-900c5105-f1e4-4b87-abcb-38313516bb7f.png)](https://github.com/Esau-Herrera) [![Linkedin](https://user-images.githubusercontent.com/92976034/214440998-c96bb284-3cfe-4630-ba1e-9cc6929c9593.png)](https://www.linkedin.com/in/esau-herrera/)
+[![GitHub](imagenes/github_icon.png)](https://github.com/Esau-Herrera) [![Linkedin](imagenes/linkedin_icon.png)](https://www.linkedin.com/in/esau-herrera/)
 
