@@ -1,66 +1,105 @@
 <!DOCTYPE html>
 
 <html lang="es">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css"> 
-    <script src="script.js"></script>
-    <link rel="icon" href="imagenes/Logo2.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- reset de css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- mi hoja de estilos -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- archivo js -->
+    <script src="./js/script.js"></script>
+    <!-- icono de pagina -->
+    <link rel="icon" href="imagenes/Logo2.ico" />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Encriptador</title>
   </head>
 
   <body>
-    
-    <head>
-
-      <header>
-
-        <img class="logo" src="imagenes/logo.png" alt="Logo de Alura">
-
-      </header>
-
-    </head>
-
+    <!-- header -->
+    <header>
+      <!-- img logo -->
+      <img class="logo" src="./imagenes/logo.png" alt="Logo de Alura" />
+    </header>
+    <!-- cuerpo -->
     <main>
-      <section class="area-encriptar">             
-        <textarea class="text-area" name="text-area" placeholder="Ingrese texto aquí"></textarea>        
+      <!-- areaTexto -->
+      <section class="area-encriptar">
+        <!-- textoEntrada -->
+        <textarea
+          class="text-area"
+          name="text-area"
+          placeholder="Ingrese texto aquí"
+        ></textarea>
+        <!-- contenederoInformacion -->
         <div class="informacion">
-          <h6><img src="imagenes/exclamation-circle-fill.svg" alt="Signo de exclamación">Sólo letreas minúsculas y sin acentos</h6>
+          <h6>
+            <img
+              src="./imagenes/exclamation-circle-fill.svg"
+              alt="Signo de exclamación"
+            />Sólo letreas minúsculas y sin acentos
+          </h6>
         </div>
-
+        <!-- contenedorBotonesEntrada -->
         <div class="btns-area-encriptar">
-          <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
-          <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>          
+          <!-- botonEncriptar -->
+          <button id="btn-encriptar" class="botones" onclick="encriptar()">
+            Encriptar
+          </button>
+          <!-- botonDesencriptar -->
+          <button
+            id="btn-desencriptar"
+            class="botones"
+            onclick="desencriptar()"
+          >
+            Desencriptar
+          </button>
         </div>
       </section>
-
+      <!-- areaMensaje -->
       <section class="area-desencriptar">
-        <textarea class="mensaje" name="mensaje" readonly>          
-        </textarea>
-      <div class="btns-area-desencriptar">
-        <button hidden onclick="copiarTexto()" class="copiar">Copiar</button>
-        <button hidden class="limpiar" onclick="limpiar()">Limpiar</button>
-      </div>  
+        <!-- textoSalida -->
+        <textarea class="mensaje" name="mensaje" readonly> </textarea>
+        <!-- contenedorBotonesMensaje -->
+        <div class="btns-area-desencriptar">
+          <!-- botonCopiar -->
+          <button hidden onclick="copiarTexto()" id="copiar" class="botones">
+            Copiar
+          </button>
+          <!-- botonLimpiar -->
+          <button hidden id="limpiar" class="botones" onclick="limpiar()">
+            Limpiar
+          </button>
+        </div>
       </section>
     </main>
-    
+    <!-- footer -->
     <footer class="redes">
       <div>
         <p>&copy Todos los derechos reservados - Esaú Herrera</p>
-        <ul>          
+        <ul>
           <li>
-            <a href="https://github.com/Esau-Herrera" target="_blank" rel="noopener noreferrer"><img src="imagenes/github_icon.png" alt="icono github">
+            <a
+              href="https://github.com/Esau-Herrera"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./imagenes/github_icon.png" alt="icono github" />
             </a>
           </li>
 
           <li>
-            <a href="https://www.linkedin.com/in/esau-herrera/" target="_blank" rel="noopener noreferrer"><img src="imagenes/linkedin_icon.png" alt="icono linkedin">
+            <a
+              href="https://www.linkedin.com/in/esau-herrera/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./imagenes/linkedin_icon.png" alt="icono linkedin" />
             </a>
           </li>
         </ul>
@@ -68,5 +107,3 @@
     </footer>
   </body>
 </html>
-
-

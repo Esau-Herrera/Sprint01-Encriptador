@@ -66,12 +66,11 @@ function limpiar(){
 function visuales(){
   document.querySelector(".mensaje").classList.add("ocultar-bg");
   document.querySelector(".text-area").value = "";
-  document.querySelector(".copiar").style.display = "block";
-  document.querySelector(".limpiar").style.display = "block";
+  document.querySelector("#copiar").style.display = "block";
+  document.querySelector("#limpiar").style.display = "block";
 }
 
 function quitarBotones(){
-  document.querySelector(".copiar").style.display = "none";
-  document.querySelector(".limpiar").style.display = "none";
+  document.querySelector("#copiar").style.display = "none";
+  document.querySelector("#limpiar").style.display = "none";
 }
-//arreglar que funcionen los botones
