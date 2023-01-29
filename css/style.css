@@ -4,6 +4,7 @@
   --colorSecundario: #0a3871;
   --colorTerciario: #fff;
 }
+
 /* selector */
 * {
   background: var(--colorPincipal);
@@ -12,6 +13,7 @@
   line-height: 150%;
   box-sizing: border-box;
 }
+
 /* body */
 body {
   display: flex;
@@ -21,6 +23,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 /* logo */
 .logo {
   position: relative;
@@ -28,6 +31,7 @@ body {
   top: 20px;
   width: 5%;
 }
+
 /* main */
 main {
   display: flex;
@@ -35,12 +39,14 @@ main {
   width: 95%;
   height: 90%;
 }
+
 /* areaTexto */
 .area-encriptar {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
+
 /* textoEntrada */
 .text-area {
   color: var(--colorSecundario);
@@ -69,6 +75,7 @@ main {
   border-radius: 0.625rem;
   -webkit-box-shadow: inset 0 0 2.5rem rgb(10, 56, 113);
 }
+
 /* informacion */
 .informacion {
   display: flex;
@@ -80,13 +87,13 @@ main {
   height: 0.8125rem;
   margin-right: 4px;
 }
-
+/* clase botones */
 .botones {
   border: 0.0625rem solid var(--colorSecundario);
   border-radius: 1.125rem;
   cursor: pointer;
 }
-
+/* botonoes del aera encriptar */
 .btns-area-encriptar {
   display: flex;
   justify-content: space-between;
@@ -95,19 +102,24 @@ main {
   height: 10%;
 }
 
+#btn-encriptar,
+#btn-desencriptar {
+  height: 70%;
+  width: 48%;
+}
+
+/* boton encriptar */
 #btn-encriptar {
   background-color: var(--colorSecundario);
   color: var(--colorTerciario);
-  height: 70%;
-  width: 48%;
 }
 
+/* boto desencriptar */
 #btn-desencriptar {
   color: var(--colorSecundario);
-  height: 70%;
-  width: 48%;
 }
 
+/* zona desencriptar */
 .area-desencriptar {
   display: flex;
   flex-direction: column;
@@ -118,6 +130,7 @@ main {
   box-shadow: 30px 0px 35px 0px rgba(10, 56, 113, 0.709);
 }
 
+/* zona mensaje */
 .mensaje {
   background: var(--colorTerciario);
   color: #495057;
@@ -134,6 +147,7 @@ main {
   background-repeat: no-repeat;
 }
 
+/* oculta fondo de mensaje */
 .ocultar-bg {
   background-image: none;
 }
@@ -162,7 +176,8 @@ main {
   font-size: 1.2rem;
 }
 
-#copiar {
+#copiar,
+#limpiar {
   color: var(--colorSecundario);
   width: 60%;
   height: 40%;
@@ -171,8 +186,6 @@ main {
 #limpiar {
   background-color: var(--colorSecundario);
   color: var(--colorTerciario);
-  width: 60%;
-  height: 40%;
 }
 
 .redes {
@@ -407,7 +420,7 @@ a {
   .btns-area-encriptar button {
     font-size: 65%;
   }
-  .area-encriptar h6{
+  .area-encriptar h6 {
     font-size: 60%;
   }
 }
